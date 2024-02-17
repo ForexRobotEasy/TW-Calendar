@@ -1,0 +1,68 @@
+mql5
+// Developer: Forex Robot Easy Team
+// Site: forexroboteasy.com
+
+#property strict
+
+// Structure to store economic event data
+struct EconomicEvent
+{
+   datetime time;           // Event time
+   string description;      // Event description
+   string currency;         // Currency affected by the event
+   double previousValue;    // Previous value of the economic indicator
+   double forecastValue;    // Forecasted value of the economic indicator
+   double actualValue;      // Actual value of the economic indicator
+};
+
+// Array to store economic events
+EconomicEvent events[];
+
+// Function to pull real-time economic events data from major publishing sources
+void PullEconomicEventsData()
+{
+   // Implementation to pull data from major publishing sources
+   // and populate the events array
+   // ...
+}
+
+// Function to display economic events data in an organized manner
+void DisplayEconomicEvents()
+{
+   // Implementation to display economic events data
+   // in the Market Watch section of the trading terminal
+   // ...
+}
+
+// Function to provide insights and analysis on the impact of macroeconomic events
+void ProvideMarketInsights()
+{
+   // Implementation to analyze the economic events data
+   // and provide insights on the impact on the Forex market
+   // ...
+}
+
+// Function to implement necessary trading functions
+void ImplementTradingFunctions()
+{
+   // Implementation to implement necessary trading functions
+   // to support strategic decision-making by traders
+   // based on the provided market insights
+   // ...
+}
+
+// Entry point of the program
+void OnStart()
+{
+   // Pull real-time economic events data
+   PullEconomicEventsData();
+   
+   // Display economic events data
+   DisplayEconomicEvents();
+   
+   // Provide market insights
+   ProvideMarketInsights();
+   
+   // Implement trading functions
+   ImplementTradingFunctions();
+}
